@@ -13,11 +13,11 @@ public class Principal {
             
             var menu = """
                   
-                    1-
-                    2-
-                    3-
-                    4-
-                    5- 
+                    1- Cadastrar artistas
+                    2- Cadastrar músicas
+                    3- Listar músicas
+                    4- Buscar músicas por artistas
+                    5- Pesquisar dados sobre um artista
                                     
                                     
                     9 - Sair       
@@ -31,18 +31,23 @@ public class Principal {
             switch (opcao){
                 
                 case 1:
+                    cadastroArtista();
                     break;
 
                 case 2:
+                    cadastroMusica();
                     break;
 
                 case 3:
+                    listaMusica();
                     break;
 
                 case 4:
+                    buscaMusicaPorArtista();
                     break;
 
                 case 5:
+                    dadosArtista();
                     break;
 
                 case 9:
@@ -57,6 +62,23 @@ public class Principal {
             
         }
         
+        
+    }
+
+    private void dadosArtista() {
+    }
+
+    private void buscaMusicaPorArtista() {
+        
+    }
+
+    private void listaMusica() {
+    }
+
+    private void cadastroMusica() {
+    }
+
+    private void cadastroArtista() {
         
     }
 
