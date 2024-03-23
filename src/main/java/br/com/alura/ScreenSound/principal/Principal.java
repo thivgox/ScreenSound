@@ -2,6 +2,8 @@ package br.com.alura.ScreenSound.principal;
 
 import java.util.Scanner;
 
+
+
 public class Principal {
 
 
@@ -51,7 +53,11 @@ public class Principal {
                     break;
 
                 case 9:
+                    System.out.println("Encerrando a aplicação ");
                     break;
+
+                default:
+                    System.out.println("Opções Invalida");
             }
             
             
