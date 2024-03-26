@@ -15,11 +15,17 @@ public class Artista {
     @Column(unique = true)
     private String nome;
     @Enumerated(EnumType.STRING)
-    private tipoArtista tipo;
+    private TipoArtista tipo;
 
 
     @OneToMany(mappedBy = "artista")
     private List<Musica> musicas = new ArrayList<>();
+
+    public Artista(){}
+    public Artista(String nome, TipoArtista tipo) {
+        this.nome = nome;
+        this.tipo = tipo;
+    }
 
     public long getId() {
         return id;
@@ -37,12 +43,8 @@ public class Artista {
         this.nome = nome;
     }
 
-    public tipoArtista getTipo() {
+    public TipoArtista getTipo() {
         return tipo;
-    }
-
-    public void setTipo(tipoArtista tipo) {
-        this.tipo = tipo;
     }
 
     public List<Musica> getMusicas() {
