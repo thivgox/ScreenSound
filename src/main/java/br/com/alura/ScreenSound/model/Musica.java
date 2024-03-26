@@ -19,7 +19,7 @@ public class Musica {
 
     }
     public Musica(String nomeMusica) {
-
+        this.titulo = nomeMusica;
     }
 
     public Long getId() {
@@ -50,6 +50,6 @@ public class Musica {
     public String toString() {
         return
                 " titulo='" + titulo + '\'' +
-                ", artista=" + artista;
+                ", artista=" + artista.getNome();
     }
 }
